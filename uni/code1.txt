@@ -1,0 +1,36 @@
+import numpy as np
+import scipy.sparse as sp
+import scipy.sparse.linalg as spla
+import matplotlib.pyplot as plt
+
+# Constants
+D = 2.7268  # Fractal dimension of 4D Menger Sponge
+N = 3        # Fractal recursion factor
+c = 3e8      # Speed of light (m/s)
+G = 6.674e-11 # Gravitational constant
+
+# Grid settings
+gridsize = 50  # Discretized spacetime grid
+T_max = 100    # Maximum time steps
+delta_x = 1e-3 # Spacing in space
+delta_t = 1e-6 # Time step size
+
+# Initialize metric tensor on grid
+G_f = np.zeros((gridsize, gridsize, gridsize, gridsize))
+G_f[0, :, :, :] = 1  # Initial condition
+
+# Fractal corrections (Monte Carlo randomization at deeper recursion levels)
+def fractal_correction(depth, size):
+    return N**(-D * depth) * np.random.normal(0, 0.01, size)
+
+# Time evolution loop
+for t in range(T_max):
+    for depth in range(3):  # Sum over first 3 recursion levels
+        correction = fractal_correction(depth, (gridsize, gridsize, gridsize, gridsize))
+        G_f += correction
+
+# Plot the curvature variations
+plt.imshow(G_f[:, :, gridsize//2, gridsize//2], cmap='inferno')
+plt.title("Fractal Gravity Tensor Evolution (Mid-Slice)")
+plt.colorbar()
+plt.show()

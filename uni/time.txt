@@ -1,0 +1,138 @@
+Warning! This story has a lot of speculation
+The way we experience life makes us interpret time as linear. There is a start and an end, from A point to B point, from the Big Bang to the heat death of the universe.
+First guess is: time is unidimensional.
+We can interact with other objects in “real time”, which makes us think there is a common time for all.
+Second guess: time is absolute
+What if time is an illusion?
+What if the past doesn’t exist, and neither does the future? What are they?
+Can we get back in time?
+My answers
+I have spent some time thinking about these questions, maybe not lately, but I used to. And I want to share the answers I came up with.
+Time is one of the most counterintuitive concepts around the preconception of how the Universe works.
+• Time is not unidimensional (neither 2D, 3D or 4D)
+• Time is not absolute (not the same tik tak rate of change)
+• We can’t get back in time. (I’m sorry sci-fi movies)
+• Yes, time is an illusion. (but it doesn’t mean a subjective illusion)
+• Past doesn’t exist, Future doesn’t exist, PRESENT doesn’t exist.
+1. Dimensionality
+As there is a start and end, we tend to imagine time as a straight line from past to future.
+
+Yet, when we study physics, we notice some things, one of them is that formulas have no direction for time. The law of physics doesn’t point to the future as what is coming, the solutions to the past or to the future are the same.
+With this observation (about math models) we can conclude there is almost nothing objective that tells us the past and future have a different treatment. Then we can forget the arrow from past to future and just plot a segment or a two directional arrow.
+• 
+There is an exception, and it is the main reason we end up thinking about time direction going from start to future: The second law of thermodynamics: Entropy.
+Wait to talk bout entropy…
+In physics, we use time as a single variable ‘t’, this is using the assumption that it is 1D, and as long as we know using this model to describe events in time worked without problems. So, yes we can expect time to be 1D (at least locally).
+This preconception changes slightly when introducing quantum mechanics (or big distances), there are imaginary numbers
+• 
+It turns out the wave equation that is used to describe particles and its evolution over time uses imaginary numbers.
+Or when we rewrite the Minkowski metric as a Pythagorean theorem form.
+• 
+Using this time with imaginary numbers can suggest there is a bidimensional nature of it. (imaginary numbers are intrinsically two dimensional).
+Imaginary numbers are in short numbers that allow rotation, and rotation needs at least two dimensions.
+One of the reasons to use imaginary numbers in time, is the same reason we use analytic extension over functions: it allows to do calculations about singularities.
+• 
+If there is a singularity in a model, in a specific time, we can calculate an integral from before the singularity to after it by using analytical extensions given by complex numbers.
+Inside a singularity
+Evaluating a function where previously the result was infinity
+medium.com
+And because we know time didn’t stop existing by a singularity, we can expect it to have a mechanism to avoid its death, one of those possible mechanisms is that time is not one-dimensional. Once we accept this, there is no reason to think it should be 2D, it could be any other (we don’t know).
+2. Time is not absolute
+This answer came with general relativity, since then we know time is relative. Relative to what? to speed (but also gravity). The faster you move to respect something else, the rate of your tik tak change.
+One of the most famous rhetorics about this is the “twin paradox”, which basically shares that if one of the twins travels faster (close to the speed of light) then when it gets back to earth it will be younger than the twin that stayed at speed zero.
+This has been presumably tested with atomic clocks with astronauts (by a lapse of less than a second older).
+Yet this is one of the concepts that is hard to get right, even if we think time is relative, we are still biased to an absolute time framework.
+Under this scheme of not existing an absolute time, this means there is no “present”. Yes, the non-existence of the present is a consequence of the non-existence of absolute time. We can’t say there is a “now” because what is now for us can be a different “now” for others.
+And you can ask, how, how can a “now” not exist if we can synchronize in almost a “now” concept, like right now you are reading this, or when if “now” doesn’t exist?
+The answer is: Time is not absolute, but there is a locality property. In a similar way the universe has locality for space (two close objects can interact more often and faster than two objects far apart). This same meets for time, there is not a “now” but there is a good approximation of it because we are locally close.
+This is where one of the time illusions comes in, the “now” concept is an approximation due to locality. This illusion that causes locality has many other examples, as the flat-earth.
+We can end up thinking the earth is flat if we look at it from close (in relation to the radius), so the surface is almost a straight line, a flat plane, but once we look from far, the curvature starts taking shape.
+• 
+In a local zone, a straight line looks as straight as a curved line.
+In time, this analogy doesn’t mean time is curved (although it can be curved for other reasons, as space too), it means we experience a common “now” because the delay is not perceptible at “tiny” scale.
+If you're a gamer, think of it as a multiplayer game with latency. People inside the game can think they are playing simultaneously, when everyone has a delay greater than zero. This exact same mechanism happens in real life, there is not a simultaneous now, everyone has a latency with respect to each other (and each object).
+This not only applies for living beings, but also objects, whatever every you see or interact has a latency, even if you touch something “now” you actually didn’t, there is always a delay of some microseconds (attoseconds or whatever), the time the signal from the neurons of your hands (sensorial neurons) travel to the neurons of your brain (processor).
+The conclusion here is, absolute time is an approximation due to locality. There is no universal “now”, and every object has a now-latency.
+I forgot to say, this also applies for speed-of-time, the rate of change of a tiktak takes is not the same for every object. As general relativity says, this rate changes given the speed.
+3. We can’t get back in time
+To begin with, there is no arrow of time. In this sense, there is no way to keep track of the direction of the past. If we can’t point to the past, we can travel in that direction.
+This is a bit contradictory, because it means we can travel back in time, but not as we expect. Due coincidence.
+Like, if there is no arrow of time, this means there are many possible ways of a system evolving, so that one of the possible futures can be by a coincidence the same as the past.
+Here is where entropy comes in.
+We didn’t understand time very well, and we ended up mixing two concepts: space and entropy (I add others later).
+In other words: time is a misconception of the synergetic combination of entropy, space and change.
+I will pause the narration subtitles sequence to talk little bit about entropy here.
+Entropy
+Time is a consequence of {entropy, space, change, randomness} (4 concepts now)
+As an example, let’s say we live in a universe with an infinite amount of states: 1024
+In terms of information, we can say it is a Universe with 10 bits of information as 2¹⁰=1024.
+• 
+However, we can rename every bit, the only thing we care about is the sequence above, that it is the initial state, so:
+• 
+Let’s add a rule of change, but to be fair, it is random. This doesn’t mean the universe is “fair”, it is just that there is no order, I wrote a sequence (with order from left to right) but such an order doesn’t exist.
+The only rules are:
+• Rename whatever you want (it's a matter of perspective): what I can interpret as a 1, can be interpreted as a 0 by other observer.
+• Change exists: (actually don’t, if we add projective dimensions) however, let’s start stating the initial state of the universe changes, and keep changing.
+If we counter the number of 1’s and 0’s, we notice it is biased: the initial state begins with all zeros. As changes happen, there is 1's emerging. But as change doesn’t care if 0 or 1, it can happen that a 1 becomes 0 again.
+Countering the number of 1’s OR 0’s is equivalent to taking the average (and normalizing). With this in mind, something happens: Law of large numbers — Wikipedia
+As every bit of the information in the Universe is an Independent and identically distributed random variable, there is a clear tendency in the description of the universe. It tends to the mean. On average every bit is an 0.5, 10 bits are 5.
+The average of 10 bits changing randomly will tend to a 5 average. This is obvious, I hope to you, the same way we throw a 6-face dice many times and the average of throws will tend to the mean 3.5.
+Well, this is not an analogy or a metaphor, it is how the Universe works.
+I make this clarification, because I am used to using metaphors to explain concepts, but this time you are learning how the Universe evolves.
+The initial sequence of 0’s is the big bang state, the average 0.5 of all zeros and ones is the heat death of the Universe.
+This model will make clearer why there is no arrow of time, as you see randomness.
+If we are in time=2 seconds (wait no), we stop saying time= seconds as this is an absolute frame of reference. In this model, we say 2 bits flips.
+From the initial state, if we do 2 bits flips, can we get back in time to the original state? WE CAN, but the future possible changes to get it are less probable than going to the average of 5. To get back to all zeros after two flips, we need the next two flips to reverse those changes.
+So, we can get back in time, but the probability of that happening is 2^(-10) which is almost zero (if we are in the heat death state). If we were only after 2 bits flips (2 seconds), it will be approx 1/100 (because the flipping bit can repeat over itself).
+This is the mechanism that makes time an emergent concept (an illusion), because the tendency of the average goes from a homogeneous state (the big bang) to a homogeneous random state (the heat death of the universe).
+Times don’t follow a specific path, it is just that one specific combination is more common than others. This makes the illusion of time going in one direction, from 0000… to 01010….
+Time can go back, but the probability of that happening is almost zero.
+An analogy, which is more like an isomorphism (I mean, the nature behind it is the same) is temperature. As temperature time can go to 0 kelvin, but there are so many states that it is almost impossible to see the temperature of a system decreasing. And it can, but low probability.
+With temperature, it can’t be negative (in kelvin), there is movement of particles or not, but not negative movement. The same happens with time, even if you try to go back in time, change is always forward. So either there is change or not, similarly there is movement or not.
+Reversing movement is at the end of the day movement, so going to the past is equivalent to going to the future, a future which state is similar to one we already experienced but we expect it not to be a global reversion, because if you reverse your brain movements this means your memory deletes and it becomes equivalent to living the time as I was the first time. So the traveling back in time, most people look for is a local change reversal.
+The second law of thermodynamics is stochastic, entropy does not always increase, it is just that increasing is the most common state. Decreasing entropy is possible, but almost 0% probability.
+In this way, time at a quantum level (because there are a few bits in locality) can go back in time, but at the macroscopic level there are so many bits that the law of big numbers makes a clear tendency to the mean. We can even say with this that particles (1 bit information like) are timeless because of few states.
+Time does not always point to the mean state (future) it is just 99.9999% of possible futures.
+From here we can see also how any possible future can be interpreted with a different dimensionality. There are 2^(bits) of information ways of time passing, it is not a straight path from A to B, but a:
+• 
+The binomial theorem will work here, the number of possible paths of “time” to evolve from the big bang nCr(10,0) to a heat death state is nCr(10,5)
+• 
+Notice at the first flip there are 10 possible futures, and then in the second flip there are 9 (given the last flip), but from 0 flips to two flips there are 45 possible states. and there are only 10 states where the first flip will be the same as the second. 45 different possible “futures” vs 10 going back to “past”, this if we use a few bits, but for many bits it will be a huge difference, 99999… paths to “future” less than 0.0000…1 of 9999… ways of going back.
+As a conclusion, time is stochastic (multidimensional?), in a similar way temperature is. Entropy can decrease (time going backward) but it is almost 0% probable.
+4. Time is an illusion
+This answer is almost shared in the ‘Entropy section’, time doesn’t exist as we know it, it is the macroscopic perception of changes of random variables going from an initial state to the mean. (see law of large numbers)
+5. Past doesn’t exist, Future doesn’t exist, PRESENT doesn’t exist.
+So we know the universe is a map of random variables, the ”present” is a specific sequence of information
+• 
+The present is almost above 2D sequence of information (more specifically is the surface of the sphere), but it is missing delay. Communication is not simultaneous, it happens at a speed of light. So what we get as present looks more like this:
+• 
+I think the illustration is not good (it becomes messy if I draw many layers of 2D sequences over each other), but this tries to be a light cone of bits. Which means the bits that you think are your “present” are the past of others’ present. See Light cone — Wikipedia
+• 
+What I am trying to tell with this is that, we never see a “now” we always see the past, but if things are close that past has 0.0000001 seconds (a few seconds) delay, while if we see far objects we are watching many years of lights ago.
+This to say the present doesn’t exist.
+What about the past, what exists about the past is “information”, but the past doesn’t exist as something that happened and is a saved point, the past is a state of less entropy, which imprint is the “present”. It is hard to explain this, but the big reason I insist the past doesn’t exist is because:
+We can change the past under this frame of work, in which the “past” is back. Another way of explaining the idea is: the past is also the future, just a low probable future.
+In other words, the past is not written yet. We usually get the past as something that is written and gone, so we cannot interact with the past never again.
+It is important to make a distinction here (Venn diagram):
+• 
+The past we can change is the one that has not collapsed yet. We cannot change the “past” that is already known, although we can find a future that by coincidence is the same state that was before… however, about the unknown past, it is the future too.
+Let me do an example, to show you how this is a deal about thinking about the past existing:
+Let’s say there are two universes (actually one universe disconnected) that never interacted with each other, one day they interact, and whatever you see after the first observation is that the Universe always existed, same old as you. This, given a measure, but what happens is that if you “ask” a different measure, you could get a different universe state that is incompatible with the first measure.
+I don’t know if I explain this well, but for people who know some about physics, what I am telling is the “spooky action at a distance” Einstein talked about, also applies for time: “spooky action at a time”.
+If we measure an entangled spin, it is not defined as a classical variable until it collapses, same happens with the past, the past is not defined until we measure it.
+You can experience this in a lab with Quantum eraser experiment — Wikipedia
+We entangle two systems of particles, wait years to do the measurement, and they will evolve in an entangled way such that it depends on the measurement of the future to define the past, this way the past depends on the future measurement. This is the main idea of why I keep the past as an illusion, yet the collapsed information is settled, we can talk about this collapsed information as the past, but the “past that is unknown” is not written yet, not collapsed yet, then the interpretation of it as the “past” becomes confusing, as it can change as it were the future depending on our decisions of which will be measured.
+What other question can be about the time?
+In conclusion, about what is time
+Time is the illusion of flipping bits of random variables, the past is the state with less entropy of the sequence, and the future is the most common combination of bits (law of large numbers). In this sense, the past is the known information and the future is the unknown information, this is different from the previous concept because the unknown past couldn’t be changed, but in this model, the unknown past is of the same nature as the future (known future should be equivalent to the past).
+Time as temperature can be decreased (get back in time) locally, but this would increase entropy outside the locality (in the rest of the universe). Getting back in time globally is also possible, but this is almost 0% probable (and lack of motivation, because brains will have a reset so it will end up being worthless, however this can explain the birth of universes… at a 0.000…1% probability 2^(-bits))
+One’s present is other past, the far two objects are the bigger latency of communication. A 0 latency doesn’t exist, we always interact with the past, there is not a “now”.
+Time doesn’t goes from a state A to B in straig unidimensional line, but it has many possibles ways of evolving, this is kind of multidimensionality, but not exactly, let’s just have in mind from a one state A to a state B there is not a linear connection from past to future.
+Final conclusion, more than those concepts being an illusion, we could say we need a new definition of them that better fits their behavior.
+Thanks for reading!
+I will go into mathematical and physics formulation over this in the future. I missed sharing about the holographic principle. In short, all the information of the “now” is encoded in a 3D surface of a 4D sphere. This way time is another space dimension but it is deeply connecting with other dimensions as time_basis=sqrt(space_basis), that encoding dimensionality into another is the consequence of the 3D encoded data in a 4D shape. So in total we have a 3D-dimensional space, but because it is encoded holographically over a 4D shape we can get 4 dimensions in which one of them is “fake”.
+Time is a “fake” dimension due to the holographic principle. It is a projective dimension, so it is not exactly 1D, 2D, 3D or 4D…
+I don't have all the answers, nor do I guarantee they are right, these are just the current answers I have concluded myself about time.
+Math
+Mathematics
+Education

@@ -1,0 +1,116 @@
+import numpy as np
+import scipy.sparse as sp
+import scipy.sparse.linalg as spla
+import matplotlib.pyplot as plt
+
+# Constants
+D = 2.7268  # Fractal dimension of 4D Menger Sponge
+N = 3        # Fractal recursion factor
+c = 3e8      # Speed of light (m/s)
+G = 6.674e-11 # Gravitational constant
+hbar = 1.0545718e-34  # Reduced Planck's constant
+m_e = 9.10938356e-31  # Electron mass (for wavefunction simulation)
+m_phi = 1.0e-30  # Hypothetical mass of the Klein-Gordon field
+M_bh = 10 ** 30  # Approximate mass of a stellar black hole (kg)
+A_horizon = 16 * np.pi * (G * M_bh / c**2) ** 2  # Black hole horizon area
+
+# Grid settings
+gridsize = 50  # Discretized spacetime grid
+T_max = 100    # Maximum time steps
+delta_x = 1e-3 # Spacing in space
+delta_t = 1e-6 # Time step size
+
+# Initialize metric tensor on grid
+G_f = np.zeros((gridsize, gridsize, gridsize, gridsize))
+G_f[0, :, :, :] = 1  # Initial condition
+
+# Fractal corrections (Monte Carlo randomization at deeper recursion levels)
+def fractal_correction(depth, size):
+    return N**(-D * depth) * np.random.normal(0, 0.01, size)
+
+# Initialize quantum wavefunction (Fractal Schrödinger Equation)
+Psi = np.exp(-np.linspace(-1, 1, gridsize)**2)  # Gaussian wave packet
+Psi = Psi / np.linalg.norm(Psi)  # Normalize
+
+# Kinetic term using finite difference method
+Laplacian = -2 * np.eye(gridsize) + np.eye(gridsize, k=1) + np.eye(gridsize, k=-1)
+Laplacian /= delta_x**2
+
+# Hamiltonian with fractal corrections
+H_f = - (hbar**2 / (2 * m_e)) * Laplacian + np.diag(fractal_correction(1, gridsize))
+
+# Time evolution using Crank-Nicolson method
+I = np.eye(gridsize)
+A = I - 1j * (delta_t / (2 * hbar)) * H_f
+B = I + 1j * (delta_t / (2 * hbar)) * H_f
+
+# Initialize Klein-Gordon field (Fractal Quantum Field Theory)
+Phi = np.exp(-np.linspace(-1, 1, gridsize)**2)  # Scalar field distribution
+Pi = np.zeros(gridsize)  # Conjugate momentum field
+
+# Klein-Gordon field evolution (discretized wave equation with fractal terms)
+def update_kg_field(Phi, Pi, Laplacian, delta_t, m_phi):
+    Phi_new = Phi + delta_t * Pi
+    Pi_new = Pi + delta_t * (np.dot(Laplacian, Phi) - m_phi**2 * Phi + fractal_correction(1, gridsize))
+    return Phi_new, Pi_new
+
+# Initialize entangled quantum states (Bell pair)
+Psi_entangled = np.array([[1, 0, 0, 1]]) / np.sqrt(2)  # Bell state: (|00⟩ + |11⟩)/√2
+
+# Decoherence function incorporating fractal corrections
+def fractal_decoherence(Psi, depth):
+    decoherence_factor = np.exp(-N**(-D * depth) * delta_t)
+    return Psi * decoherence_factor
+
+# Fractal Black Hole Entropy Calculation
+def fractal_black_hole_entropy(A_horizon, depth):
+    return (k_B * c**3 / (4 * G * hbar)) * A_horizon * sum(N**(-D * n) for n in range(depth))
+
+# Time evolution loop
+bh_entropy_evolution = []
+for t in range(T_max):
+    for depth in range(3):  # Sum over first 3 recursion levels
+        correction = fractal_correction(depth, (gridsize, gridsize, gridsize, gridsize))
+        G_f += correction
+    Psi = np.linalg.solve(A, B @ Psi)  # Evolve wavefunction
+    Phi, Pi = update_kg_field(Phi, Pi, Laplacian, delta_t, m_phi)  # Evolve Klein-Gordon field
+    Psi_entangled = fractal_decoherence(Psi_entangled, depth)  # Apply fractal decoherence
+    bh_entropy_evolution.append(fractal_black_hole_entropy(A_horizon, depth))
+
+# Plot the curvature variations
+plt.imshow(G_f[:, :, gridsize//2, gridsize//2], cmap='inferno')
+plt.title("Fractal Gravity Tensor Evolution (Mid-Slice)")
+plt.colorbar()
+plt.show()
+
+# Plot wavefunction evolution
+plt.plot(np.abs(Psi)**2, label='Quantum Probability Density')
+plt.title("Fractal Quantum Wavefunction Evolution")
+plt.xlabel("Grid Index")
+plt.ylabel("Probability Density")
+plt.legend()
+plt.show()
+
+# Plot Klein-Gordon field evolution
+plt.plot(Phi, label='Klein-Gordon Field')
+plt.title("Fractal Klein-Gordon Field Evolution")
+plt.xlabel("Grid Index")
+plt.ylabel("Field Amplitude")
+plt.legend()
+plt.show()
+
+# Plot entanglement decoherence over time
+plt.plot(np.abs(Psi_entangled.flatten()), label='Entanglement Strength')
+plt.title("Fractal Decoherence of Entangled State")
+plt.xlabel("Time Steps")
+plt.ylabel("Entanglement Strength")
+plt.legend()
+plt.show()
+
+# Plot Fractal Black Hole Entropy Evolution
+plt.plot(bh_entropy_evolution, label='Fractal Black Hole Entropy')
+plt.title("Fractal Black Hole Entropy Evolution")
+plt.xlabel("Time Steps")
+plt.ylabel("Entropy (S)")
+plt.legend()
+plt.show()

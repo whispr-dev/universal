@@ -1,0 +1,90 @@
+import numpy as np
+import scipy.sparse as sp
+import scipy.sparse.linalg as spla
+import matplotlib.pyplot as plt
+
+# Constants
+D = 2.7268  # Fractal dimension of 4D Menger Sponge
+N = 3        # Fractal recursion factor
+c = 3e8      # Speed of light (m/s)
+G = 6.674e-11 # Gravitational constant
+hbar = 1.0545718e-34  # Reduced Planck's constant
+m_e = 9.10938356e-31  # Electron mass (for wavefunction simulation)
+m_phi = 1.0e-30  # Hypothetical mass of the Klein-Gordon field
+M_bh = 10 ** 30  # Approximate mass of a stellar black hole (kg)
+A_horizon = 16 * np.pi * (G * M_bh / c**2) ** 2  # Black hole horizon area
+k_B = 1.380649e-23  # Boltzmann constant
+H_0 = 70  # Hubble constant (km/s/Mpc)
+
+# Grid settings
+gridsize = 150  # Further increased resolution for better accuracy
+T_max = 300    # More time steps for better evolution tracking
+delta_x = 5e-5 # Smaller spatial steps for finer precision
+delta_t = 2e-7 # Reduced time step to stabilize calculations
+
+# Initialize metric tensor on grid
+G_f = np.zeros((gridsize, gridsize, gridsize, gridsize))
+G_f[0, :, :, :] = 1  # Initial condition
+
+# Fractal corrections (Refined Monte Carlo randomization at deeper recursion levels)
+def fractal_correction(depth, size):
+    return N**(-D * depth) * np.random.normal(0, 0.0025, size)  # Further reduced noise for smoother results
+
+# Initialize quantum wavefunction (Fractal Schrödinger Equation)
+Psi = np.exp(-np.linspace(-1, 1, gridsize)**2)  # Gaussian wave packet
+Psi = Psi / np.linalg.norm(Psi)  # Normalize
+
+# Kinetic term using finite difference method
+Laplacian = -2 * np.eye(gridsize) + np.eye(gridsize, k=1) + np.eye(gridsize, k=-1)
+Laplacian /= delta_x**2
+
+# Hamiltonian with refined fractal corrections
+H_f = - (hbar**2 / (2 * m_e)) * Laplacian + np.diag(fractal_correction(1, gridsize))
+
+# Time evolution using Crank-Nicolson method
+I = np.eye(gridsize)
+A = I - 1j * (delta_t / (2 * hbar)) * H_f
+B = I + 1j * (delta_t / (2 * hbar)) * H_f
+
+# Initialize Klein-Gordon field (Fractal Quantum Field Theory)
+Phi = np.exp(-np.linspace(-1, 1, gridsize)**2)  # Scalar field distribution
+Pi = np.zeros(gridsize)  # Conjugate momentum field
+
+# Klein-Gordon field evolution (discretized wave equation with refined fractal terms)
+def update_kg_field(Phi, Pi, Laplacian, delta_t, m_phi):
+    Phi_new = Phi + delta_t * Pi
+    Pi_new = Pi + delta_t * (np.dot(Laplacian, Phi) - m_phi**2 * Phi + fractal_correction(1, gridsize))
+    return Phi_new, Pi_new
+
+# Fractal Cosmic Structure Formation (Refined for Cosmic Web Matching)
+def fractal_structure_growth(depth, time, scale_factor):
+    return sum(N**(-D * n) * np.exp(-time / (scale_factor * N**n)) for n in range(depth))
+
+# Fractal Inflation Model - Expanding Universe with Fractal Corrections
+def fractal_inflation(time, initial_expansion, depth):
+    return initial_expansion * np.exp(H_0 * time) * sum(N**(-D * n) for n in range(depth))
+
+# Time evolution loop
+structure_growth_evolution = []
+inflation_evolution = []
+scale_factor = 50  # Adjusted scale factor for cosmic structure alignment
+initial_expansion = 1e-30  # Starting scale factor of the universe
+for t in range(T_max):
+    structure_growth_evolution.append(fractal_structure_growth(depth=5, time=t, scale_factor=scale_factor))
+    inflation_evolution.append(fractal_inflation(time=t, initial_expansion=initial_expansion, depth=5))
+
+# Plot Refined Fractal Cosmic Structure Formation
+plt.plot(structure_growth_evolution, label='Refined Fractal Cosmic Structure Formation')
+plt.title("Refined Fractal Cosmic Structure Growth Over Time (Cosmic Web Matching)")
+plt.xlabel("Time Steps")
+plt.ylabel("Structure Density")
+plt.legend()
+plt.show()
+
+# Plot Fractal Inflation Model
+plt.plot(inflation_evolution, label='Fractal Inflation Expansion')
+plt.title("Fractal Inflation Model: Universe Expansion with Self-Similarity")
+plt.xlabel("Time Steps")
+plt.ylabel("Scale Factor")
+plt.legend()
+plt.show()
